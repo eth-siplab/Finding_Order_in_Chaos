@@ -31,8 +31,39 @@ Contents
 ----------
 
 * [Datasets](#datasets)
-* [Running](#Running)
+* [Running](#running)
+* [TLDR](#tldr)
 * [Citation](#citation)
+
+TLDR
+----------
+Some figures to summarize. Two sinusoidal with a constant coefficient for mixup while changing the phase of them between &pi; and -&pi;.
+The anchor has two frequencies [f1: 2Hz, f2: 10Hz] and the sample has only one at 2Hz, e.g., 2Hz carries information while the anchor has noise in 10Hz.
+
+![My GIF](Figures/linear_method.gif)
+
+| *Figure 1.* | Sum of two sinusoidal in time and frequency domain using linear mixup |
+
+Observe the amplitude change when the linear mixup is used. The amplitude in 2Hz is about to vanish according to the phase difference.
+
+![My GIF](Figures/my_method.gif)
+
+| *Figure 2.* | Sum of two sinusoidal in time and frequency domain using the proposed method |
+
+No loss of information in the frequency when the proposed method is used. Check the below figures to see the behaviour in polar coordinates.
+
+![My GIF](Figures/linear_polar.gif)
+
+| *Figure 3.* | Amplitude and phase for 2Hz sinusoidal in the generated sample using linear mixup given in polar coordinates |
+
+
+![My GIF](Figures/my_method_polar.gif)
+
+| *Figure 4.* | Amplitude and phase for 2Hz sinusoidal in the generated sample using the proposed method given in polar coordinates |
+
+When the proposed method is used, the amplitude of critical frequency does not change even though the phase difference.
+
+
 
 Datasets
 ----------
@@ -54,5 +85,14 @@ If VAE models are not trained in the corresponding folders, e.g., 'ucihar0' for 
 Citation
 ----------
 If you find our paper or codes useful, please cite our work:
+
+
+Credits
+--------
+Scripts for training VAE models are mainly taken from
+[Isolating Sources of Disentanglement in Variational Autoencoders](https://github.com/rtqichen/beta-tcvae)
+
+while the structure of contrastive learning comes from
+[What Makes Good Contrastive Learning on Small-Scale Wearable-Based Tasks?](https://github.com/Tian0426/CL-HAR)
 
  
