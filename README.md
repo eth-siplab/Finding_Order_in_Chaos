@@ -34,6 +34,7 @@ Contents
 * [Running](#running)
 * [TLDR](#tldr)
 * [Citation](#citation)
+* [Credits](#credits)
 
 TLDR
 ----------
@@ -69,7 +70,7 @@ Datasets
 ----------
 1. Datasets
 - `Activity recognition`  [UCIHAR](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones), [HHAR](https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition), [USC](https://dl.acm.org/doi/pdf/10.1145/2370216.2370438).
-- `Heart rate prediction`  [IEEE SPC12 and IEEE SPC22](https://signalprocessingsociety.org/community-involvement/ieee-signal-processing-cup-2015) or from the [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8119878&tag=1), [DaLiA](https://archive.ics.uci.edu/dataset/495/ppg+dalia).
+- `Heart rate prediction`  [IEEE SPC12 and IEEE SPC22](https://signalprocessingsociety.org/community-involvement/ieee-signal-processing-cup-2015), [DaLiA](https://archive.ics.uci.edu/dataset/495/ppg+dalia).
 - `Cardiovascular disease (CVD) classification`  [CPSC2018](http://2018.icbeb.org/Challenge.html), [Chapman](https://digitalcommons.chapman.edu/scs_articles/653/).
 2. After downloading the raw data, they should be processed with the corresponding [scripts](https://github.com/eth-siplab/Finding_Order_in_Chaos/tree/main/raw_data_process), if there is any.
 
@@ -80,7 +81,7 @@ The command to run the whole process:
 python runner_function.py --framework 'simclr' --backbone 'DCL' --dataset 'ucihar' --aug1 'na' --aug2 'resample' --n_epoch 120 --batch_size 256 --lr 3e-3 --lr_cls 0.03 --cuda 0 --cases 'subject_large' --VAE --mean 0.9 --std 0.1
 ```
 
-If VAE models are not trained in the corresponding folders, e.g., 'ucihar0' for domain 0 of ucihar dataset, the VAE training will start first.
+If VAE models are not trained in the corresponding folders, e.g., 'ucihar0' for domain 0 of the ucihar dataset, the VAE training will start first.
 
 Citation
 ----------
@@ -94,5 +95,9 @@ Scripts for training VAE models are mainly taken from
 
 while the structure of contrastive learning comes from
 [What Makes Good Contrastive Learning on Small-Scale Wearable-Based Tasks?](https://github.com/Tian0426/CL-HAR)
+
+IEEE SPC dataset is from 
+the [Measuring Heart Rate During Physical Exercise by Subspace Decomposition and Kalman Smoothing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8119878&tag=1)
+ and the GitHub implementation of the paper.
 
  
