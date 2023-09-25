@@ -9,21 +9,13 @@ Berken Utku Demirel, Christian Holz<br/>
 <p align="center">
 </p>
 
-___________
-
-
-<p align="center">
-<img src="figs/teaser.gif" width="800">
-</p>
-
-
 ---
 
 > In this paper, we propose a novel data augmentation method for quasi-periodic time-series tasks that aims to connect intra-class samples together, and thereby find order in the latent space.
 Our method builds upon the well-known mixup technique by incorporating a novel approach that accounts for the periodic nature of non-stationary time-series.
 Also, by controlling the degree of chaos created by data augmentation, our method leads to improved feature representations and performance on downstream tasks.
 <p align="center">
-  <img src="figs/framework.jpg" width="800">
+  <img src="Figures/chaos_2.jpg" width="800">
 </p>
 
 
