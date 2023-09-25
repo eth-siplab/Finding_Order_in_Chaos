@@ -39,13 +39,13 @@ Contents
 TLDR
 ----------
 Some figures to summarize. Two sinusoidal with a constant coefficient for mixup while changing the phase of them between &pi; and -&pi;.
-The anchor has two frequencies [f1: 2Hz, f2: 10Hz] and the sample has only one at 2Hz, e.g., 2Hz carries information while the anchor has noise in 10Hz.
+The anchor has two frequencies [f1: 2Hz, f2: 10Hz] and the sample has only one at 2Hz, e.g., 2Hz carries information while the anchor has noise at 10Hz.
 
 ![My GIF](Figures/linear_method.gif)
 
 | *Figure 1.* | Sum of two sinusoidal in time and frequency domain using linear mixup |
 
-Observe the amplitude change when the linear mixup is used. The amplitude in 2Hz is about to vanish according to the phase difference.
+Observe the amplitude change when the linear mixup is used. The amplitude in 2Hz is about to vanish at some phase values even though both samples have a 2Hz component, i.e., linear mixup can destroy the information instead of interpolation.
 
 ![My GIF](Figures/my_method.gif)
 
