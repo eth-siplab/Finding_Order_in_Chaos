@@ -15,7 +15,7 @@ Berken Utku Demirel, Christian Holz<br/>
 Our method builds upon the well-known mixup technique by incorporating a novel approach that accounts for the periodic nature of non-stationary time-series.
 Also, by controlling the degree of chaos created by data augmentation, our method leads to improved feature representations and performance on downstream tasks.
 <p align="center">
-  <img src="Figures/chaos_2.jpg" width="800">
+  <img src="Figures/chaos_2.jpg">
 </p>
 
 
