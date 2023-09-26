@@ -45,6 +45,18 @@ python runner_function.py --framework 'simclr' --backbone 'DCL' --dataset 'uciha
 
 If VAE models are not trained in the corresponding folders, e.g., 'ucihar0' for domain 0 of the ucihar dataset, the VAE training will start first.
 
+The command to run the ablation experiments,
+
+without the proposed mixup with VAE:
+```
+python runner_function.py --framework 'simclr' --backbone 'DCL' --dataset 'ucihar' --aug1 'na' --aug2 'resample' --n_epoch 120 --batch_size 256 --lr 3e-3 --lr_cls 0.03 --cuda 0 --cases 'subject_large' --BestMixup
+```
+
+with the proposed mixup without VAE:
+```
+python runner_function.py --framework 'simclr' --backbone 'DCL' --dataset 'ucihar' --aug1 'na' --aug2 'resample' --n_epoch 120 --batch_size 256 --lr 3e-3 --lr_cls 0.03 --cuda 0 --cases 'subject_large' --ablation_2
+```
+
 
 TLDR
 ----------
