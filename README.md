@@ -91,13 +91,13 @@ Citation
 ----------
 If you find our paper or codes useful, please cite our work:
 
-    @inproceedings{demirel2023finding,
-      title={Finding Order in Chaos: A Novel Data Augmentation Method for Time Series in Contrastive Learning},
-      author={Berken Utku Demirel and Christian Holz},
-      year={2023},
-      eprint={2309.13439},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+    @inproceedings{
+    demirel2023finding,
+    title={Finding Order in Chaos: A Novel Data Augmentation Method for Time Series in Contrastive Learning},
+    author={Berken Utku Demirel and Christian Holz},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023},
+    url={https://openreview.net/forum?id=dbVRDk2wt7}
     }
 
 Credits
