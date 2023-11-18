@@ -109,7 +109,7 @@ while the structure of contrastive learning comes from
 [What Makes Good Contrastive Learning on Small-Scale Wearable-Based Tasks?](https://github.com/Tian0426/CL-HAR)
 
 IEEE SPC dataset is from 
-the [Measuring Heart Rate During Physical Exercise by Subspace Decomposition and Kalman Smoothing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8119878&tag=1)
+the [Measuring Heart Rate During Physical Exercise by Subspace Decomposition and Kalman Smoothing](https://ieeexplore.ieee.org/document/8119878)
  and the GitHub implementation of the paper.
 
  
