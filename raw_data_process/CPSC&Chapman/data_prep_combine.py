@@ -25,8 +25,9 @@ for idx, k in enumerate(chapman_data):
     chapman_y[counter] = chapman_labels[idx][0][0]
     chapman_x[counter] = k
     counter += 1
-last_index = np.argmax(chapman_y==0)
-chapman_x, chapman_y = chapman_x[0:last_index,:,:], chapman_y[0:last_index]
+# Uncomment to check if there is any NaN values in the data
+# last_index = np.argmax(chapman_y==0)
+# chapman_x, chapman_y = chapman_x[0:last_index,:,:], chapman_y[0:last_index]
 chapman_train_x, chapman_test_x, chapman_train_y, chapman_test_y = train_test_split(chapman_x, chapman_y, test_size=0.20, random_state=40, stratify=chapman_y)
 cpsc_train_x, cpsc_train_y = cpsc_data_train[0], cpsc_data_train[1]
 Nans = np.unique(np.where(np.isnan(cpsc_train_x)==True)[0])
