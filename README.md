@@ -18,6 +18,11 @@ Also, by controlling the degree of chaos created by data augmentation, our metho
   <img src="Figures/chaos_2.jpg">
 </p>
 
+## Update
+
+We have a newer work that does **not require any augmentation**:
+**Learning with Frame Projections** — https://github.com/eth-siplab/Learning-with-FrameProjections
+
 
 Contents
 ----------
